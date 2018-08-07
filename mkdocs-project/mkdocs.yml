@@ -1,0 +1,39 @@
+# This is the main configuration file for the MkDocs website.
+# Use hash-comments to comment out pages have not been written
+# Reference: http://www.mkdocs.org/user-guide/configuration/
+#
+site_name: 'StateMod User Documentation'
+pages:
+- 'Home': index.md
+- 'Disclaimer': disclaimer/disclaimer.md
+- '1 - Acknowledgement': acknowledgement/acknowledgement.md
+- '2 - Introduction': introduction/introduction.md
+- '3 - Model Description': description/description.md
+- '4 - Input Description':
+  - 'Overview': input/overview.md
+  - 'Response File': input/ResponseFile.md
+  - 'OperatingRules':
+     - input/OperatingRules.md
+     - 'OperatingRule 1': input/OperatingRule-1/OperatingRule-1.md
+- '5 - Output Description': output/output.md
+- '6 - Model Operation': operation/operation.md
+- '7 - Modeling Procedures': procedures/procedures.md
+- '8 - Supporting Utilities': utilities/utilities.md
+- '9 - Discontinued but Supported Files': discontinued-files/discontinued-files.md
+- 'Examples':
+  - 'Overview': examples/overview.md
+- 'Lessons':
+  - 'Lesson 1 - Create model configuration': lesson1-model-config.md
+# ------- configuration properties ---------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme: material
+#theme: readthedocs
+#repo_url:  https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-doc-user
+site_description:  'CDSS StateMod User Documentation'
+site_author: 'State of Colorado'
+site_favicon:  'images/StateMod-favicon.ico'
+copyright:  'State of Colorado'
+# Use extra CSS to customize styles, based on theme
+extra_css:
+  - 'css/extra-material-theme.css'

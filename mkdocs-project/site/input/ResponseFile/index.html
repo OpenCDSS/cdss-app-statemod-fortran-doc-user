@@ -1,0 +1,944 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="CDSS StateMod User Documentation">
+      
+      
+      
+        <meta name="author" content="State of Colorado">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.languages" content="">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      
+        <link rel="shortcut icon" href="../../images/StateMod-favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.12.0">
+    
+    
+      
+        <title>Response File - StateMod User Documentation</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-04ea671600.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/extra-material-theme.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="StateMod User Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  4 - Input Description
+                </span>
+              
+            
+            Response File
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
+    StateMod User Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../disclaimer/disclaimer/" title="Disclaimer" class="md-nav__link">
+      Disclaimer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../acknowledgement/acknowledgement/" title="1 - Acknowledgement" class="md-nav__link">
+      1 - Acknowledgement
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../introduction/introduction/" title="2 - Introduction" class="md-nav__link">
+      2 - Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../description/description/" title="3 - Model Description" class="md-nav__link">
+      3 - Model Description
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      4 - Input Description
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        4 - Input Description
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Response File" class="md-nav__link md-nav__link--active">
+      Response File
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
+    
+    <label class="md-nav__link" for="nav-6-3">
+      OperatingRules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        OperatingRules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OperatingRules/" title="OperatingRules" class="md-nav__link">
+      OperatingRules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OperatingRule-1/OperatingRule-1/" title="OperatingRule 1" class="md-nav__link">
+      OperatingRule 1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../output/output/" title="5 - Output Description" class="md-nav__link">
+      5 - Output Description
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../operation/operation/" title="6 - Model Operation" class="md-nav__link">
+      6 - Model Operation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../procedures/procedures/" title="7 - Modeling Procedures" class="md-nav__link">
+      7 - Modeling Procedures
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/utilities/" title="8 - Supporting Utilities" class="md-nav__link">
+      8 - Supporting Utilities
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../discontinued-files/discontinued-files/" title="9 - Discontinued but Supported Files" class="md-nav__link">
+      9 - Discontinued but Supported Files
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Lessons
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Lessons
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lesson1-model-config/" title="Lesson 1 - Create model configuration" class="md-nav__link">
+      Lesson 1 - Create model configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="statemod-model-input-response-file-rsp">StateMod / Model Input / Response File (<code>*.rsp</code>)</h1>
+<p>The response file contains the names of all other data files required to run the model.
+his file is read by subroutine StateM.
+Note that Version 10.30 and greater allows a user to enter response file data using one of two formats; free-format and sequential.
+StateMod reads the first file type and based on the occurrence of the character <code>=</code> in the
+first file name it determines if the file is free-format (contains a <code>=</code>) or sequential (does not contain a <code>=</code>).</p>
+<p>The free-format file approach allows file names to be entered in any order using the file descriptors described in the table below,
+where each line of the response file uses a format similar to the following example:</p>
+<pre><code>Control = dataset.ctl
+</code></pre>
+
+<p>Any file type that is not required for a simulation is simply not included.
+Any file name may be commented out by including a <code>#</code> character in column 1.
+For a description of the sequential, old, format see the section titled 9.0 Discontinued but Supported File Formats. </p>
+<p>Note that model output files take on the name of the response file.
+For example, a response file with name <code>dataset.rsp</code> will result in output file <code>dataset.b43</code> and similar.
+It is recommended that different model runs using descriptive response file naming conventions.
+For example, use the dataset name as the general response file name (<code>dataset.rsp</code>) and use modifiers such as <code>H</code> for historical (<code>datasetH.rsp</code>).</p>
+<table>
+<thead>
+<tr>
+<th><strong>File Descriptor</strong></th>
+<th><strong>File Type</strong></th>
+<th><strong>Standard File Extension</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Control</code></td>
+<td>Control File</td>
+<td><code>*.ctl</code></td>
+</tr>
+<tr>
+<td><code>River_Network</code></td>
+<td>River Network File</td>
+<td><code>*.rin</code></td>
+</tr>
+<tr>
+<td><code>River_Gage</code></td>
+<td>River Gage File</td>
+<td><code>*.rig</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Reservoir_Station</code></td>
+<td>Reservoir Station</td>
+<td><code>*.res</code></td>
+</tr>
+<tr>
+<td><code>Diversion_Station</code></td>
+<td>Diversion Station</td>
+<td><code>*.dds</code></td>
+</tr>
+<tr>
+<td><code>StreamGage_Station</code></td>
+<td>Stream Gage Station</td>
+<td><code>*.ris</code></td>
+</tr>
+<tr>
+<td><code>Instreamflow_Station</code></td>
+<td>Instream Flow Station</td>
+<td><code>*.ifs</code></td>
+</tr>
+<tr>
+<td><code>Well_Station</code></td>
+<td>Well Station</td>
+<td><code>*.wes</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Instreamflow_Right</code></td>
+<td>Instream Flow Right</td>
+<td><code>*.ifr</code></td>
+</tr>
+<tr>
+<td><code>Reservoir_Right</code></td>
+<td>Reservoir Right</td>
+<td><code>*.rer</code></td>
+</tr>
+<tr>
+<td><code>Diversion_Right</code></td>
+<td>Diversion Right</td>
+<td><code>*.ddr</code></td>
+</tr>
+<tr>
+<td><code>Operational_Right</code></td>
+<td>Operational Right</td>
+<td><code>*.opr</code></td>
+</tr>
+<tr>
+<td><code>Well_Right</code></td>
+<td>Well Right</td>
+<td><code>*.wer</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Precipitation_Monthly</code></td>
+<td>Precipitation Monthly</td>
+<td><code>*.prc</code></td>
+</tr>
+<tr>
+<td><code>Precipitation_Annual</code></td>
+<td>Precipitation Annual</td>
+<td><code>*.pra</code></td>
+</tr>
+<tr>
+<td><code>Evaporation_Monthly</code></td>
+<td>Evaporation Monthly</td>
+<td><code>*.evm</code></td>
+</tr>
+<tr>
+<td><code>Evaporation_Annual</code></td>
+<td>Evaporation Annual</td>
+<td><code>*.eva</code></td>
+</tr>
+<tr>
+<td><code>Stream_Base Monthly</code></td>
+<td>Baseflow Monthly</td>
+<td><code>*.rim/*.xbm</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Diversion_Demand_Monthly</code></td>
+<td>Diversion Demand Monthly</td>
+<td><code>*.ddm</code></td>
+</tr>
+<tr>
+<td><code>Diversion_Demand_AverageMonthly</code></td>
+<td>Diversion Demand Annual</td>
+<td><code>*.dda</code></td>
+</tr>
+<tr>
+<td><code>Diversion_DemandOverride_Monthly</code></td>
+<td>Diversion Override Monthly</td>
+<td><code>*.ddo</code></td>
+</tr>
+<tr>
+<td><code>Instreamflow_Demand_Monthly</code></td>
+<td>Inst. Flow Demand Monthly</td>
+<td><code>*.ifm</code></td>
+</tr>
+<tr>
+<td><code>Instreamflow_Demand_AverageMonthly</code></td>
+<td>Inst. Flow Demand Ave. Monthly</td>
+<td><code>*.ifa</code></td>
+</tr>
+<tr>
+<td><code>Well_Demand_Monthly</code></td>
+<td>Well Demand Monthly</td>
+<td><code>*.wem</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>DelayTable_Monthly</code></td>
+<td>Delay Table Monthly</td>
+<td><code>*.dly</code></td>
+</tr>
+<tr>
+<td><code>Reservoir_Target_Monthly</code></td>
+<td>Reservoir Target Monthly</td>
+<td><code>*.tar</code></td>
+</tr>
+<tr>
+<td><code>Reservoir_Return</code></td>
+<td>Reservoir Seepage Return Data</td>
+<td><code>*.rrf</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>IrrigationPractice_Yearly</code></td>
+<td>Irrigation Practice Yearly</td>
+<td><code>*.ipy</code></td>
+</tr>
+<tr>
+<td><code>ConsumptiveWaterRequirement_Monthly</code></td>
+<td>Irrigation Water Req. Monthly</td>
+<td><code>*.iwr/*.ddc</code></td>
+</tr>
+<tr>
+<td><code>StateCU_Structure</code></td>
+<td>StateCU Structure (AWC) file</td>
+<td><code>*.str</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Reservoir_Historic_Monthly</code></td>
+<td>Reservoir Historic Monthly</td>
+<td><code>*.eom</code></td>
+</tr>
+<tr>
+<td><code>StreamEstimate_Coefficients</code></td>
+<td>Stream Estimate Coefficients</td>
+<td><code>*.rib</code></td>
+</tr>
+<tr>
+<td><code>StreamGage_Historic_Monthly</code></td>
+<td>Stream Gage Historic Monthly</td>
+<td>`*.rih</td>
+</tr>
+<tr>
+<td><code>Diversion_Historic_Monthly</code>       Diversion Historic Monthly</td>
+<td><code>*.ddh</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Well_Historic_Monthly</code></td>
+<td>Well Historic Monthly</td>
+<td><code>*.weh</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>OutputRequest</code></td>
+<td>Output Request</td>
+<td><code>*.out</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Stream_Base_Daily</code></td>
+<td>Stream Base Daily</td>
+<td><code>*.rid</code></td>
+</tr>
+<tr>
+<td><code>Diversion_Demand_Daily</code></td>
+<td>Direct Flow Demand Daily</td>
+<td><code>*.ddd</code></td>
+</tr>
+<tr>
+<td><code>Instreamflow_Demand_Daily</code></td>
+<td>Instream Flow Demand Daily</td>
+<td><code>*.ifd</code></td>
+</tr>
+<tr>
+<td><code>Well_Demand_Daily</code></td>
+<td>Well Demand Daily</td>
+<td><code>*.wed</code></td>
+</tr>
+<tr>
+<td><code>Reservoir_Target_Daily</code></td>
+<td>Reservoir Target Daily</td>
+<td><code>*.tad</code></td>
+</tr>
+<tr>
+<td><code>DelayTable_Daily</code></td>
+<td>Delay Table Daily</td>
+<td><code>*.dld</code></td>
+</tr>
+<tr>
+<td><code>ConsumptiveWaterRequirement_Daily</code></td>
+<td>Irrigation Water Req. Daily</td>
+<td><code>*.iwd</code></td>
+</tr>
+<tr>
+<td><code>StreamGage_Historic_Daily</code></td>
+<td>StreamGage Historic Daily</td>
+<td><code>*.riy</code></td>
+</tr>
+<tr>
+<td><code>Diversion_Historic_Daily</code></td>
+<td>Diversion Historic Daily</td>
+<td><code>*.ddy</code></td>
+</tr>
+<tr>
+<td><code>Well_Historic_Daily</code></td>
+<td>Well Historic Daily</td>
+<td><code>*.wey</code></td>
+</tr>
+<tr>
+<td><code>Reservoir_Historic_Daily</code></td>
+<td>Reservoir Historic Daily</td>
+<td><code>*.eoy</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Downstream_Call</code></td>
+<td>Downstream Call</td>
+<td><code>*.cal</code></td>
+</tr>
+<tr>
+<td><code>RioGrande_Spill_Monthly</code></td>
+<td>Rio Grande Spill file</td>
+<td><code>*.rgs</code></td>
+</tr>
+<tr>
+<td><code>San_Juan_Recovery</code></td>
+<td>San Juan Recovery Data</td>
+<td><code>*.sjr</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>GeographicInformation</code></td>
+<td>Geographic Information (not used by StateMod, used by StateMod GUI)</td>
+<td><code>*.gis</code></td>
+</tr>
+<tr>
+<td><code>Network</code></td>
+<td>Network File (not used by StateMod, used by StateMod GUI and StateDMI)</td>
+<td><code>*.net</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Plan_Data</code></td>
+<td>Plan Data</td>
+<td><code>*.pln</code></td>
+</tr>
+<tr>
+<td><code>Plan_Wells</code></td>
+<td>Plan Well Augmentation Data</td>
+<td><code>*.plw</code></td>
+</tr>
+<tr>
+<td><code>Plan_Return</code></td>
+<td>Plan Return Data</td>
+<td><code>*.prf</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Reach_Data</code></td>
+<td>Reach Report Data</td>
+<td><code>*.rch</code></td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OperatingRules/" title="OperatingRules" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                OperatingRules
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            State of Colorado
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-268d62d82d.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
