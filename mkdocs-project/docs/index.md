@@ -1,4 +1,4 @@
-# StateMod User Documenation #
+# StateMod User Documentation #
 
 This documentation is the user manual for Colorado's Decision Support Systems (CDSS) StateMod water allocation model software.
 
