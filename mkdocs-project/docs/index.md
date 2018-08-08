@@ -2,6 +2,10 @@
 
 This documentation is the user manual for Colorado's Decision Support Systems (CDSS) StateMod water allocation model software.
 
+The State of Colorado's Stream Simulation Model (StateMod) is a water allocation and accounting model
+capable of making comparative analyses of various historical and future water management policies in a river basin.
+It is designed to be applied to any river basin through appropriate input data preparation. 
+
 **This documentation is a work in progress, with the initial online version including references to the existing PDF format
 and examples to illustrate use of online documentation features.**
 
@@ -17,11 +21,19 @@ This documentation page includes the following sections:
 
 ## How to Use this Documentation ##
 
-This documentation is the user documentation for the StateMod software and currently consists of the legacy Word/PDF documentation. 
-The legacy documentation may be converted to online navigable form.
-
+This documentation is the user documentation for the StateMod software.
+Major sections of the documentation currently consist of the legacy Word/PDF documentation. 
 The legacy PDF documents are referenced from web pages for each section of the user documentation,
 using the original chapter numbers.
+Some shorter sections have been converted to online form.
+The legacy documentation may be fully converted to online navigable form at some point.
+
+Use the navigation menu on the left to select pages and the navigation menu on the right
+to select sections within a page.
+The navigation menus may be collapsed if viewing in a narrow window or mobile device.
+
+* See the [Full legacy documentation as PDF](legacy/StateMod Version 15 Documentation.pdf) (note that the links work
+but ***Back*** may return to this page).
 
 ## Colorado's Decision Support Systems ##
 
