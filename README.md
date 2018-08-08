@@ -108,4 +108,5 @@ This repository is maintained by the OpenCDSS team.
 
 The following release notes indicate the update history for documentation, with GitHub repository issue indicated,
 
+* 2018-08-07 - Update with latest StateMod documentation, relatively minor changes.
 * 2018-08-06 - Initial content released.
