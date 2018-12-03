@@ -1,6 +1,6 @@
 # cdss-app-statemod-fortran-doc-user #
 
-This repository contains [Colorado's Decision Support Systems (CDSS)](http://cdss.state.co.us/Pages/CDSSHome.aspx) StateMod user documentation.
+This repository contains [Colorado's Decision Support Systems (CDSS)](https://www.colorado.gov/cdss) StateMod user documentation.
 See the following online resources:
 
 * OpenCDSS Documentation
@@ -32,7 +32,7 @@ This page contains the following sections:
 The repository contains the following:
 
 ```text
-cdss-app-statemod-fortran-doc-user/  Repository name and main folder.
+cdss-app-statemod-fortran-doc-user/  Repository name and main folder should match.
   build-util/                        Useful scripts to view, build, and deploy documentation.
   mkdocs-project/                    Typical MkDocs project for this documentation.
     mkdocs.yml                       MkDocs configuration file for website.
