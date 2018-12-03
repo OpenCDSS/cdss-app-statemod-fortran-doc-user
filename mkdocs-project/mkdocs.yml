@@ -2,10 +2,12 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: 'StateMod User Documentation'
+site_name: 'StateMod Documentation'
 pages:
 - 'Home': index.md
-- 'Disclaimer': disclaimer/disclaimer.md
+- 'License':
+  - 'StateMod License': license/statemod-license.md
+  - 'GPL v3 License': license/LICENSE.md
 - '1 - Acknowledgement': acknowledgement/acknowledgement.md
 - '2 - Introduction': introduction/introduction.md
 - '3 - Model Description': description/description.md
@@ -28,12 +30,11 @@ pages:
 # Use Material theme
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme: material
-#theme: readthedocs
-#repo_url:  https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-doc-user
-site_description:  'CDSS StateMod User Documentation'
-site_author: 'State of Colorado'
+#repo_url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user
+site_description:  'CDSS StateMod Documentation'
+site_author: 'Colorado Department of Natural Resources'
 site_favicon:  'images/StateMod-favicon.ico'
-copyright:  'State of Colorado'
+copyright:  'Colorado Department of Natural Resources'
 # Use extra CSS to customize styles, based on theme
 extra_css:
   - 'css/extra-material-theme.css'

@@ -1,4 +1,4 @@
-# StateMod User Documentation #
+# StateMod Documentation #
 
 This documentation is the user manual for Colorado's Decision Support Systems (CDSS) StateMod water allocation model software.
 
@@ -12,8 +12,7 @@ and examples to illustrate use of online documentation features.**
 This documentation page includes the following sections:
 
 * [How to Use this Documentation](#how-to-use-this-documentation) - guidance and list of main documentation sections
-* [Colorado's Decision Support Systems](#colorados-decision-support-systems) - the system under which the software is maintained
-* [Open Water Foundation](#open-water-foundation) - lead organization for moving StateMod to open source project
+* [Colorado's Decision Support Systems (CDSS)](#colorados-decision-support-systems-cdss) - the system under which the software is maintained
 * [License](#license) - license for software and this documentation
 * [Source Repository on GitHub](#source-repository-on-github) - location of StateMod repository in GitHub
 
@@ -35,7 +34,7 @@ The navigation menus may be collapsed if viewing in a narrow window or mobile de
 * See the [Full legacy documentation as PDF](legacy/StateMod Version 15 Documentation.pdf) (note that the links work
 but ***Back*** may return to this page).
 
-## Colorado's Decision Support Systems ##
+## Colorado's Decision Support Systems (CDSS) ##
 
 Colorado's Decision Support Systems (CDSS, [cdss.state.co.us](http://cdss.state.co.us))
 has been developed to answer important questions about Colorado's water resources.
@@ -48,22 +47,13 @@ One component of CDSS is the StateMod water allocation model, which estimates wa
 physical and legal (water right) constraints on water decisions.
 StateMod results are linked to the StateCU consumptive use model and in some basins the MODFLOW groundwater model.
 
-In late 2016, the Open Water Foundation began the effort to move StateMod and other CDSS software to open source licensing
-and establish open source software projects, referred to as "OpenCDSS", and this documentation is one project outcome.
-
-## Open Water Foundation ##
-
-The Open Water Foundation (OWF, [openwaterfoundation.org](http://openwaterfoundation.org)) is a nonprofit social enterprise
-that focuses on developing and supporting open source software to make better
-decisions about water resources.  OWF is providing technical resources and management to
-transition StateMod and other CDSS software to sustainable open source software projects.
-
-See also other [OWF learning resources](http://learn.openwaterfoundation.org).
+In late 2016, the CWCB funded the OpenCDSS project to move StateCU and other CDSS software to open source licensing
+and establish open source software projects.
+The [Open Water Foundation](http://openwaterfoundation.org) was contracted to lead the OpenCDSS project.
 
 ## License ##
 
-The license for this documentation is being determined in the CDSS open source project.
-More information will be provided later.
+The license for this documentation is the [Creative Commons CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
 ## Source Repository on GitHub ##
 
