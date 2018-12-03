@@ -102,10 +102,19 @@ cd ${mkdocsProjectFolder}; mkdocs build --clean; cd ${scriptFolder}
 # - the -m option causes operations to run in parallel, which can be much faster
 # - the -d option means delete extra files in destination
 # - the -r option means recursive to sync the whole folder tree
-if [ ${copyToLatest} = "yes" ]; then
-	gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderLatest}
-fi
 # For now always upload to the versioned copy
+echo ""
+echo "Copying the documentation to the versioned folder..."
 gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderVersion}
+if [ ${copyToLatest} = "yes" ]; then
+	# Also copy the latest
+	echo ""
+	echo 'Copying the documentation to the "latest" folder...'
+	gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderLatest}
+else
+	echo ""
+	echo 'Remember to run with -l option if you want to upload to the "latest" folder.'
+	echo ""
+fi
 
 exit $?
