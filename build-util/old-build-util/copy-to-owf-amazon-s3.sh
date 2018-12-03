@@ -8,12 +8,12 @@ dryrun=""
 #dryrun="--dryrun"
 s3Folder="s3://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-user"
 
-# Make sure that this is being run from the build-util folder
+# Make sure that this is being run from the old-build-util folder
 pwd=`pwd`
 dirname=`basename ${pwd}`
-if [ ! ${dirname} = "build-util" ]
+if [ ! ${dirname} = "old-build-util" ]
         then
-        echo "Must run from build-util folder"
+        echo "Must run from old-build-util folder"
         exit 1
 fi
 
@@ -37,4 +37,4 @@ cd ../../mkdocs-project; mkdocs build --clean
 # Now sync the local files up to Amazon S3
 aws s3 sync site ${s3Folder} ${dryrun} --delete --profile "$awsProfile"
 
-cd ../../build-util
+cd ../build-util/old-build-util

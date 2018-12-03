@@ -4,9 +4,11 @@ This folder contains useful scripts for viewing and deploying the static website
 The scripts should be run from Git Bash and assume that a Python/MkDocs environment is configured.
 
 * `copy-to-co-dnr-gcp.sh` - build site and copy `site` files to CO DNR GCP static website
+(run from Git Bash)
 * `run-mkdocs-serve-8000.sh` - run `mkdocs serve` to view the website
+(run from Git Bash)
 
-The following old scripts are retained during transition and may be useful for reference:
+The following old scripts are retained in the `old-build-util` folder and may be useful for reference:
 
 * `copy-to-owf-amazon-s3.bat` - build site and copy `site` files to Open Water Foundation Amazon S3
 static website, used before CO DNR website was available (run from Windows command prompt)
