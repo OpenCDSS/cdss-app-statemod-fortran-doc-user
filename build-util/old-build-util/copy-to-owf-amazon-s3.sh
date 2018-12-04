@@ -6,7 +6,7 @@
 # Set --dryrun to test before actually doing
 dryrun=""
 #dryrun="--dryrun"
-s3Folder="s3://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-user"
+s3Folder="s3://learn.openwaterfoundation.org/cdss-app-statecu-fortran-doc-user"
 
 # Make sure that this is being run from the old-build-util folder
 pwd=`pwd`
