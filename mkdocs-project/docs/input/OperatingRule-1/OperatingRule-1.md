@@ -35,8 +35,6 @@ a12, a24, 12x, 4x, f12.5, f8.0, i8, 3(1x,a12,i8), i8, 1x,a12, 1x,a12,1x, 2f8.0, 
 
 **Here would link to automated tests and/or examples for this operating rule**
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-tstool-test/tree/master/test/regression/commands/general/CopyFile).
-
 ## Troubleshooting ##
 
 **Here can describe how to troubleshoot**

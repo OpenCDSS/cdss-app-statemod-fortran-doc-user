@@ -47,7 +47,7 @@ One component of CDSS is the StateMod water allocation model, which estimates wa
 physical and legal (water right) constraints on water decisions.
 StateMod results are linked to the StateCU consumptive use model and in some basins the MODFLOW groundwater model.
 
-In late 2016, the CWCB funded the OpenCDSS project to move StateCU and other CDSS software to open source licensing
+In late 2016, the CWCB funded the OpenCDSS project to move StateMod and other CDSS software to open source licensing
 and establish open source software projects.
 The [Open Water Foundation](http://openwaterfoundation.org) was contracted to lead the OpenCDSS project.
 
@@ -55,11 +55,13 @@ The [Open Water Foundation](http://openwaterfoundation.org) was contracted to le
 
 The license for this documentation is the [Creative Commons CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
+The license for StateCU software is the GPL v3 license.
+
 ## Source Repository on GitHub ##
 
-The source files for this documentation are maintained in the public GitHub repository for StateMod: [cdss-app-statemod-fortran-doc-user](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-doc-user).
-Documentation website files currently are copied to the Open Water Foundation [Learn StateMod](http://learn.openwaterfoundation.org/cdss-learn-statemod/) website,
-and will be copied to an OpenCDSS website once software tools are made available publicly.
+The source files for this documentation are maintained in the public GitHub repository for StateMod: [cdss-app-statemod-fortran-doc-user](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user).
+Documentation website files currently are copied to the Open Water Foundation [Learn StateMod](http://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-user/) website,
+and will be copied to an OpenCDSS website in the future.
 
 ## Release Notes ##
 

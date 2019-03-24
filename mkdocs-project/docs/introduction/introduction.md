@@ -151,10 +151,10 @@ The remainder of this document is organized as follows:
 
 | **Section** | **Title** | **Description**|
 |--------------|-----------------|--------------|
-|3.|[Model Description](../description/description)|Describes the theoretical basis of river operations, water allocation and reservoir operations|
-|4.|[Input Description](../input/overview)|Describes the input format for each data set|
-|5.|[Output Description](../output/output)|Describes the contents of the various outputs files|
-|6.|[Model Operation](../operation/operation)|Describes the model's operation from both the screen or command line arguments|
-|7.|[Standard Modeling Procedures](../procedures/procedures)|Describes technical details of selected portions of the programs operation and provides information on standard modeling procedures|
-|8.|[Supporting Utilities](../utilities/utilities)|Describes supporting utilities available to assist in developing a StateMod data set|
-|9.|[Discontinued but Supported Files](../discontinued-files/discontinued-files)|Describes discontinued but supported data file formats|
+|3.|[Model Description](../description/description.md)|Describes the theoretical basis of river operations, water allocation and reservoir operations|
+|4.|[Input Description](../input/overview.md)|Describes the input format for each data set|
+|5.|[Output Description](../output/output.md)|Describes the contents of the various outputs files|
+|6.|[Model Operation](../operation/operation.md)|Describes the model's operation from both the screen or command line arguments|
+|7.|[Standard Modeling Procedures](../procedures/procedures.md)|Describes technical details of selected portions of the programs operation and provides information on standard modeling procedures|
+|8.|[Supporting Utilities](../utilities/utilities.md)|Describes supporting utilities available to assist in developing a StateMod data set|
+|9.|[Discontinued but Supported Files](../discontinued-files/discontinued-files.md)|Describes discontinued but supported data file formats|
