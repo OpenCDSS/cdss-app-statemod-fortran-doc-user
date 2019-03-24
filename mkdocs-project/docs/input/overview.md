@@ -9,7 +9,7 @@ may return to this page).
 This section describes the input files required to operate the StateMod Model.
 Some data file formats have been superseded over time while continuing to maintain the old format.
 For a description of the old format see
-[Section 9.0 Discontinued by Supported File Formats](../discontinued-files/discontinued-files).
+[Section 9.0 Discontinued by Supported File Formats](../discontinued-files/discontinued-files.md).
 
 **The following is an example of what the documentaiton might look like if migrated to online format.**
 
@@ -18,5 +18,5 @@ Click on the data type in the first column to view documentation for the corresp
 
 | Data Type | Data File Extension | Data Interval | Description |
 | ---- | ----- | ----- |----|
-| [Response File](ResponseFile) | `rsp` | All | Lists files used in the dataset. |
-| [Operating Rules](OperatingRules) | `rsp` | All | Rules that control model decisions (beyond simple behavior). |
+| [Response File](ResponseFile.md) | `rsp` | All | Lists files used in the dataset. |
+| [Operating Rules](OperatingRules.md) | `rsp` | All | Rules that control model decisions (beyond simple behavior). |
