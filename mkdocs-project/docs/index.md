@@ -59,10 +59,9 @@ The license for StateCU software is the GPL v3 license.
 
 ## Source Repository on GitHub ##
 
-The source files for this documentation are maintained in the public GitHub repository for StateMod: [cdss-app-statemod-fortran-doc-user](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user).
-Documentation website files currently are copied to the Open Water Foundation [Learn StateMod](http://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-user/) website,
-and will be copied to an OpenCDSS website in the future.
+The source files for this documentation are maintained in the public GitHub repository for StateMod:
+[cdss-app-statemod-fortran-doc-user](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user).
 
 ## Release Notes ##
 
-Release notes for StateMod and this documentation will be implemented as the open source migration is finalized.
+Release notes for StateMod and this documentation will be implemented as documentation is updated.
