@@ -4,51 +4,260 @@
 #
 site_name: 'StateMod Documentation'
 nav:
-- 'Home': index.md
-- 'License':
-  - 'StateMod License': license/statemod-license.md
-  - 'GPL v3 License': license/LICENSE.md
-- '1 - Acknowledgement': acknowledgement/acknowledgement.md
-- '2 - Introduction': introduction/introduction.md
-- '3 - Model Description': description/description.md
-- '4 - Input Description':
-  - 'Overview': input/overview.md
-  - 'Response File': input/ResponseFile.md
-  - 'OperatingRules':
-     - input/OperatingRules.md
-     - 'OperatingRule 1': input/OperatingRule-1/OperatingRule-1.md
-- '5 - Output Description': output/output.md
-- '6 - Model Operation': operation/operation.md
-- '7 - Modeling Procedures': procedures/procedures.md
-- '8 - Supporting Utilities': utilities/utilities.md
-- '9 - Discontinued but Supported Files': discontinued-files/discontinued-files.md
-- 'Examples':
-  - 'Overview': examples/overview.md
-- 'Lessons':
-  - 'Lesson 1 - Create model configuration': lesson1-model-config.md
+- Home: index.md
+- 1 - Acknowledgement: Acknowledgement/1.md
+- 2 - Introduction: Introduction/2.md
+- 3 - Model Description:
+    - 3.1 - Stream Flow Allocation: Model Description/31.md
+    - 3.2 - System Operation: Model Description/32.md
+    - 3.3 - Model Application: Model Description/33.md
+    - 3.4 - Daily Operations: Model Description/34.md
+    - 3.5 - Variable Efficiency: Model Description/35.md
+    - 3.6 - Demands: Model Description/36.md
+    - 3.7 - Soil Moisture Accounting: Model Description/37.md
+    - 3.8 - Wells: Model Description/38.md
+    - 3.9 - Plans: Model Description/39.md
+- 4 - Input Description:
+    - 4.0 - Remarks: Input Description/40.md
+    - 4.1 - Response File (*.rsp): Input Description/41.md
+    - 4.2 - Control File (*.ctl): Input Description/42.md
+    - 4.3 - River Network File (*.rin): Input Description/43.md
+    - 4.4 - River Station File (*.ris): Input Description/44.md
+    - 4.4.1 - River Gage File (*.rig): Input Description/44_1.md
+    - 4.5 - Direct Diversion Station File (*.dds): Input Description/45.md
+    - 4.6 - Direct Diversion Right File (*.ddr): Input Description/46.md
+    - 4.7 - Instream Flow Station File File (*.ifs): Input Description/47.md
+    - 4.8 - Instream Flow Right File (*.ifr): Input Description/48.md
+    - 4.9 - Well Station File (*.wes): Input Description/49.md
+    - 4.10 - Well Right File (*.wer): Input Description/410.md
+    - 4.11 - Reservoir Station File (*.res): Input Description/411.md
+    - 4.12 - Reservoir Right File (*.rer): Input Description/412.md
+    - 4.13 - Operational File (*.opr): Input Description/413.md
+    - 4.13.1 - Reservoir to Instream Flow: Input Description/4131.md
+    - 4.13.2 - Reservoir to a Direct Flow or Reservoir or Carrier: Input Description/4132.md
+    - 4.13.3 - Reservoir to a Carrier: Input Description/4133.md
+    - 4.13.4 Reservoir Exchange to a Direct Flow: Input Description/4134.md
+    - 4.13.5 Reservoir Exchange to Storage: Input Description/4135.md
+    - 4.13.6 Paper Exchange Between Reservoir Accounts (Bookover): Input Description/4136.md
+    - 4.13.7 Reservoir to a Carrier by Exchange: Input Description/4137.md
+    - 4.13.8 Out-of-Priority Bookover: Input Description/4138.md
+    - 4.13.9 Release for Target Contents: Input Description/4139.md
+    - 4.13.10 General Reservoir Replacement: Input Description/41310.md
+    - 4.13.11 Carrier Right to a Ditch or Reservoir: Input Description/41311.md
+    - 4.13.12 Reoperate Water Rights: Input Description/41312.md
+    - 4.13.13 La Plata Compact (Index flow): Input Description/41313.md
+    - 4.13.14 Carrier with Constrained Demand: Input Description/41314.md
+    - 4.13.15 Interruptible Supply: Input Description/41315.md
+    - 4.13.16 Direct Flow Storage: Input Description/41316.md
+    - 4.13.17 Rio Grande Compact - Rio Grande: Input Description/41317.md
+    - 4.13.18 Rio Grande Compact - Conejos River: Input Description/41318.md
+    - 4.13.19 Split Channel Operations: Input Description/41319.md
+    - 4.13.20 San Juan Reservoir RIP Operation: Input Description/41320.md
+    - 4.13.21 Wells with Sprinkler Use: Input Description/41321.md
+    - 4.13.22 Soil Moisture Use: Input Description/41322.md
+    - 4.13.23 Downstream Call: Input Description/41323.md
+    - 4.13.24 Direct Flow Exchange: Input Description/41324.md
+    - 4.13.25 Direct Flow Bypass: Input Description/41325.md
+    - 4.13.26 Changed Water Right: Input Description/41326.md
+    - 4.13.27 Plan or Reservoir Use Direct: Input Description/41327.md
+    - 4.13.28 Plan or Reservoir Use by Exchange: Input Description/41328.md
+    - 4.13.29 Plan Spill: Input Description/41329.md
+    - 4.13.30 Reservoir Rediversion: Input Description/41330.md
+    - 4.13.31 Carrier to a Ditch or Reservoir with Reuse: Input Description/41331.md
+    - 4.13.32 Reuse Plan to a User Direct: Input Description/41332.md
+    - 4.13.33 Reuse Plan to a User by Exchange: Input Description/41333.md
+    - 4.13.34 Bookover with Reuse: Input Description/41334.md
+    - 4.13.35 Import to a Plan: Input Description/41335.md
+    - 4.13.36 Seasonal (Daily) Water Right: Input Description/41336.md
+    - 4.13.37 Augmentation Well: Input Description/41337.md
+    - 4.13.38 Out-of-Priority Diversion: Input Description/41338.md
+    - 4.13.39 Alternate Point Diversion: Input Description/41339.md
+    - 4.13.40 South Platte Compact: Input Description/41340.md
+    - 4.13.41 Storage with Special Limits: Input Description/41341.md
+    - 4.13.42 Plan Reset: Input Description/41342.md
+    - 4.13.43 In-Priority Supply: Input Description/41343.md
+    - 4.13.44 Recharge Well: Input Description/41344.md
+    - 4.13.45 Carrier with Transit Loss: Input Description/41345.md
+    - 4.13.46 Multiple Ownership: Input Description/41346.md
+    - 4.13.47 Accounting Plan Limits: Input Description/41347.md
+    - 4.13.48 Plan or Reservoir Reuse to a Plan - Direct: Input Description/41348.md
+    - 4.13.49 Plan or Reservoir Reuse to a Plan – Exchange: Input Description/41349.md
+    - 4.13.50 South Platte Compact Storage: Input Description/41350.md
+    - 4.13.51 Operating Rule Examples: Input Description/41351.md
+    - 4.14 Precipitation Data File (*.pra or *.prm): Input Description/414.md 
+    - 4.15 Evaporation Data File (*.eva or *.evm): Input Description/415.md 
+    - 4.16 Stream Flow File - Monthly (*.rim): Input Description/416.md 
+    - 4.17 Direct Flow Demand File - Monthly (*.ddm): Input Description/417.md 
+    - 4.18 Direct Flow Demand File - Annual (*.dda): Input Description/418.md 
+    - 4.19 Direct Flow Overwrite File - Monthly (*.ddo): Input Description/419.md 
+    - 4.20 Instream Flow Demand File - Monthly (*.ifm): Input Description/420.md 
+    - 4.21 Instream Flow Demand File - Annual (*.ifa): Input Description/421.md 
+    - 4.22 Well Demand - Monthly (*.wem): Input Description/422.md 
+    - 4.23 Delay Table File - Monthly (*.urm/*.dly): Input Description/423.md 
+    - 4.24 Reservoir Target Content File – Annual (*.tar): Input Description/424.md 
+    - 4.25 Historic Reservoir Content File - Monthly (*.eom): Input Description/425.md 
+    - 4.26 Base Flow File (*.rib): Input Description/426.md 
+    - 4.27 Historic Streamflow File - Monthly (*.rih): Input Description/427.md 
+    - 4.28 Historic Diversion File - Monthly (*.ddh): Input Description/428.md 
+    - 4.29 Historic Well Pumping File - Monthly (*.weh): Input Description/429.md 
+    - 4.30 San Juan Recovery Plan Sediment File (*.sjr): Input Description/430.md 
+    - 4.31 Irrigation Parameter Yearly Data File - Annual (*.ipy): Input Description/431.md 
+    - 4.32 Consumptive Water Requirement File - Monthly (*.ddc): Input Description/432.md 
+    - 4.33 Soil Moisture (StateCU Structure) File (*.str): Input Description/433.md 
+    - 4.34 Geographic Information File (*.gis): Input Description/434.md 
+    - 4.35 Output Request File (*.out): Input Description/435.md 
+    - 4.36 Streamflow File - Daily (*.rid): Input Description/436.md 
+    - 4.37 Direct Flow Demand File - Daily (*.ddd): Input Description/437.md 
+    - 4.38 Instream Flow Demand File - Daily (*.ifd): Input Description/438.md 
+    - 4.39 Well Demand File - Daily (*.wed): Input Description/439.md 
+    - 4.40 Reservoir Target Content File - Daily (*.tad): Input Description/440.md 
+    - 4.41 Irrigation Water Requirement File - Daily (*.ddx): Input Description/441.md 
+    - 4.42 Delay Table File - Daily (*.urd/*.dld): Input Description/442.md 
+    - 4.43 Historic Streamflow File - Daily (*.riy): Input Description/443.md 
+    - 4.44 Historic Diversion File - Daily (*.ddy): Input Description/444.md 
+    - 4.45 Historic Well Pumping File - Daily (*.wey): Input Description/445.md 
+    - 4.46 Historic Reservoir Content File - Daily (*.eoy): Input Description/446.md 
+    - 4.47 Downstream Call File (*.cal): Input Description/447.md 
+    - 4.48 Rio Grande Spill (*.xrg): Input Description/448.md 
+    - 4.49 Plan Data (*.pln): Input Description/449.md 
+    - 4.50 Augmentation Plan to Well Data (*.plw): Input Description/450.md 
+    - 4.51 Plan Return File (*.prf): Input Description/451.md 
+    - 4.52 Reservoir Return Flow File (*.rrf): Input Description/452.md 
+    - 4.53 Reach Data File (*.rch): Input Description/453.md 
+    - 4.54 Plan to Reservoir Recharge Data (*.plr): Input Description/454.md 
+- 5 - Output Description:
+    - 5.0 - Remarks: Output Description/50.md
+    - 5.1 - Base Flow Module Output Files: Output Description/51.md
+    - 5.1.1 - Base Flow Information File (*.xbi): Output Description/511.md
+    - 5.1.2 - Gaged Base Flow Estimate File (*.xbg): Output Description/512.md
+    - 5.1.3 - Other Base Flow Files (*.xbm): Output Description/513.md
+    - 5.2 - Simulate Module Output Files: Output Description/52.md
+    - 5.2.1 - Stream Summary File (*.xdd): Output Description/521.md
+    - 5.2.2 - Reservoir Summary File (*.xre): Output Description/522.md
+    - 5.2.3 - Well Summary File (*.xwe): Output Description/523.md
+    - 5.2.4 - Structure Summary File (*.xss): Output Description/524.md
+    - 5.2.5 - Operation Summary File (*.xop): Output Description/525.md
+    - 5.2.6 - Log File (*.log): Output Description/526.md
+    - 5.2.7 - Check File (*.chk): Output Description/527.md
+    - 5.2.8 - Replacement Reservoir File (*.xrp): Output Description/528.md
+    - 5.2.9 - Plan Summary File (*.xpl): Output Description/529.md
+    - 5.2.9.1 - Term and Condition Plan (type 1): Output Description/5291.md
+    - 5.2.9.2 - Well Augmentation Plan (type 2 and 10): Output Description/5292.md
+    - 5.2.9.3 - Reservoir Reuse Plan (type 3): Output Description/5293.md
+    - 5.2.9.4 - Non Reservoir Reuse Plan (type 4): Output Description/5294.md
+    - 5.2.9.5 - Out-of-Priority Plan (type 9): Output Description/5295.md
+    - 5.2.9.6 - Accounting Plan (type 11): Output Description/5296.md
+    - 5.2.9.7 - Release Limit Plan (type 12): Output Description/5297.md
+    - 5.2.9.8 - Changed Water Right Plan (type 13): Output Description/5298.md
+    - 5.2.10 - Other Simulation Files (*.xir), (*.xdy), (*.xry), (*.xwy), (*.xpl): Output Description/5210.md
+    - 5.3 - Report Module Output Files: Output Description/53.md
+    - 5.3.1 - Basin Water Balance (*.xwb): Output Description/531.md
+    - 5.3.2 - Water Right Report (*.xwr): Output Description/532.md
+    - 5.3.3 - Additional Output Reports: Output Description/533.md
+    - 5.4 - Data Check Output Files: Output Description/54.md
+    - 5.5 - Binary Output Files: Output Description/55.md
+    - 5.5.1 - Monthly Binary Direct Diversion File (*.b43): Output Description/551.md
+    - 5.5.2 - Monthly Binary Reservoir File (*.b44): Output Description/552.md
+    - 5.5.3 - Monthly Binary Well File (*.b42): Output Description/553.md
+    - 5.5.4 - Daily Binary Direct Diversion File (*.b49): Output Description/554.md
+    - 5.5.5 - Daily Binary Reservoir File (*.b50): Output Description/555.md
+    - 5.5.6 - Daily Binary Well File (*.b65): Output Description/556.md
+    - 5.6 - Additional Reporting Options: Output Description/56.md
+    - 5.6.1 - Reach Reporting: Output Description/561.md
+    - 5.6.2 - Detailed Call Data: Output Description/562.md
+    - 5.6.3 - Call (Control) Reporting: Output Description/563.md
+- 6 - Model Operation: Model Operation/6.md
+- 7 - Standard Modeling Procedures:
+    - 7.1 - Running the Model: Standard Modeling Procedures/71.md
+    - 7.1.1 - Abnormal Model Termination: Standard Modeling Procedures/71_1.md
+    - 7.2 - Creating Natural Flows at Gages and Ungaged Locations: Standard Modeling Procedures/72.md
+    - 7.2.1 - Natural Flows with Recharge: Standard Modeling Procedures/721.md
+    - 7.2.2 - How to Check for Natural Flow Issues: Standard Modeling Procedures/722.md
+    - 7.3 - How to Simulate Soil Moisture Accounting and Variable Efficiency: Standard Modeling Procedures/73.md
+    - 7.3.1 - Soil Moisture Implementation: Standard Modeling Procedures/731.md
+    - 7.3.2 - Variable Efficiency: Standard Modeling Procedures/732.md
+    - 7.4 - How to Add or Change Modeled Input Data: Standard Modeling Procedures/74.md
+    - 7.4.1 - Change the Period of Record: Standard Modeling Procedures/741.md
+    - 7.4.2 - Add a Diversion Structure: Standard Modeling Procedures/742.md
+    - 7.4.3 - Add a Reservoir: Standard Modeling Procedures/743.md
+    - 7.4.4 - Add an Instream Flow Reach: Standard Modeling Procedures/744.md
+    - 7.4.5 - Add/Change a Water Right Priority or Amount: Standard Modeling Procedures/745.md
+    - 7.4.6 - Add/Change a Demand: Standard Modeling Procedures/746.md
+    - 7.4.7 - Demand Considerations: Standard Modeling Procedures/747.md
+    - 7.5 - How to Model Reservoir Operations: Standard Modeling Procedures/75.md
+    - 7.5.1 - Distribution of Reservoir Water Rights to Accounts: Standard Modeling Procedures/751.md
+    - 7.5.2 - Reservoir Release Operations: Standard Modeling Procedures/752.md
+    - 7.5.3 - General Replacement Reservoir Operations: Standard Modeling Procedures/753.md
+    - 7.5.4 - Re-distribute Reservoir Contents: Standard Modeling Procedures/754.md
+    - 7.5.5 - Reservoir Evaporation: Standard Modeling Procedures/755.md
+    - 7.5.6 - Reservoir Spills: Standard Modeling Procedures/756.md
+    - 7.5.7 - Reservoir Operations Troubleshooting: Standard Modeling Procedures/757.md
+    - 7.6 - How to Model Off-Channel Reservoir Systems: Standard Modeling Procedures/76.md
+    - 7.7 - How to Model Well Operations: Standard Modeling Procedures/77.md
+    - 7.7.1 - Add Supplemental Wells: Standard Modeling Procedures/771.md
+    - 7.7.2 - Add Groundwater Only Aggregate Structures: Standard Modeling Procedures/772.md
+    - 7.7.3 - Well Operational Considerations: Standard Modeling Procedures/773.md
+    - 7.7.4 - How to Implement the Maximum or Mutual Supply Approaches: Standard Modeling Procedures/774.md
+    - 7.8 - How to Model Plan Structures and Operations: Standard Modeling Procedures/78.md
+    - 7.9 - How to Model a Release Limit Plan: Standard Modeling Procedures/79.md
+    - 7.10 - How to Model Augmentation Plans: Standard Modeling Procedures/710.md
+    - 7.10.1 - Augmentation Plan Structure: Standard Modeling Procedures/7101.md
+    - 7.10.2 - Canal Loss (Seepage) as an Augmentation Supply: Standard Modeling Procedures/7102.md
+    - 7.10.3 - Reservoir Recharge (Seepage) as an Augmentation Supply: Standard Modeling Procedures/7103.md
+    - 7.10.4 - Augmentation or Recharge Well Pumping as an Augmentation Supply: Standard Modeling Procedures/7104.md
+    - 7.10.5 - Direct Reservoir Release as an Augmentation Supply: Standard Modeling Procedures/7105.md
+    - 7.10.6 - Special Well Augmentation Plans: Standard Modeling Procedures/7106.md
+    - 7.11 - How to Model Changed Water Rights and Return Flow Obligations: Standard Modeling Procedures/711.md
+    - 7.11.1 - Changed Water Right Plan Structure: Standard Modeling Procedures/7111.md
+    - 7.11.2 - Releases from a Changed Water Right Plan: Standard Modeling Procedures/7112.md
+    - 7.11.3 - Terms and Conditions Operations: Standard Modeling Procedures/7113.md
+    - 7.11.4 - Augmentation Station Modeling: Standard Modeling Procedures/7114.md
+    - 7.12 - How to Model Alternate Points/Exchanges: Standard Modeling Procedures/712.md
+    - 7.13 - How to Model Imported Water: Standard Modeling Procedures/713.md
+    - 7.14 - How to Model Reusable Supplies: Standard Modeling Procedures/714.md
+    - 7.15 - How to Implement a Futile Call: Standard Modeling Procedures/715.md
+    - 7.16 - Basin-Specific Operations and Compacts: Standard Modeling Procedures/716.md
+    - 7.16.1 - Blue River Decree (Upstream Storage and OOP Plans): Standard Modeling Procedures/7161.md  
+    - 7.16.2 - Rio Grande Compact: Standard Modeling Procedures/7162.md  
+    - 7.16.3 - South Platte Compact: Standard Modeling Procedures/7163.md
+    - 7.16.4 - La Plata Compact: Standard Modeling Procedures/7164.md
+    - 7.17 - How to Add Daily Capability: Standard Modeling Procedures/717.md
+    - 7.17.1 - Implementing Daily Model Capabilities in a Monthly Model: Standard Modeling Procedures/7171.md
+- 8 - Supporting Utilities:
+    - 8.1 - Big Picture Plot: Supporting Utilities/81.md
+    - 8.2 - Basin Linkage: Supporting Utilities/82.md
+    - 8.3 - StateMod File Comparison: Supporting Utilities/83.md
+    - 8.4 - StateDMI: Supporting Utilities/84.md
+    - 8.5 - TSTool DMI: Supporting Utilities/85.md
+    - 8.6 - StateCU: Supporting Utilities/86.md
+    - 8.7 - SmNewRsp (StateMod Response File Program): Supporting Utilities/87.md
+    - 8.8 - SmDelay (StateMod Delay File Program): Supporting Utilities/88.md
+- 9 - Discontinued but Supported File Formats:
+    - 9.1 - Response File (Sequential): Discontinued/91.md
+    - 9.2 - Soil Moisture Parameter File (*.par): Discontinued/92.md
+    - 9.3 - Irrigation Practice File (*.ipy): Discontinued/93.md
+    - 9.4 - Operating Rule File (*.opr): Discontinued/94.md
+
 # ------- configuration properties ---------------
-# Alphabetize
-# ------------------------------------------------
-copyright:  'Colorado Department of Natural Resources'
-# ------------------------------------------------
-# Use extra CSS to customize styles, based on theme
-extra_css:
-  - 'css/extra-material-theme.css'
-# ------------------------------------------------
-# Google Analytics
-# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
-google_analytics:
- - 'UA-43023264-1'
- - auto
-# ------------------------------------------------
-# Don't publish the repo because it leads to irritating edit links
-#repo_url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user
-# ------------------------------------------------
-site_author: 'Colorado Department of Natural Resources'
-site_description:  'CDSS StateMod Documentation'
-# ------------------------------------------------
 # Use Material theme
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme:
-  name: material
-  favicon: 'images/StateMod-favicon.ico'
+  name: 'material'
+  favicon: 'images/DWR_icon.gif'
+#theme: readthedocs
+# Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
+# - Also see edit_uri if repo_url is specified
+#repo_url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user
+site_description:  'StateMod Documentation'
+site_author:  'Colorado Department of Natural Resources'
+copyright:  'Copyright Colorado Department of Natural Resources'
+# Extra options
+extra:
+ #Use extra CSS to customize styles, based on theme
+ extra_css: 'css/extra-material-theme.css'
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  - 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML'
+markdown_extensions:
+  - mdx_math
+  - footnotes

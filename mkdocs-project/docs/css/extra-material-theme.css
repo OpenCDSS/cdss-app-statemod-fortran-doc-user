@@ -12,10 +12,3 @@ article ul ul {
 article ul ul ul {
 	list-style-type:  square !important;
 }
-
-/*
- * Align text to be centered.
- */
-.alignCenter {
-	test-align: center;
-}

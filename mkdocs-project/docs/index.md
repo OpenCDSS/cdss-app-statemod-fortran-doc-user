@@ -1,67 +1,37 @@
-# StateMod Documentation #
+# StateMod User Documentation #
 
-This documentation is the user manual for Colorado's Decision Support Systems (CDSS) StateMod water allocation model software.
+<a name="StateMod"></a>
+![StateMod](images/StateMod.png)
 
-The State of Colorado's Stream Simulation Model (StateMod) is a water allocation and accounting model
-capable of making comparative analyses of various historical and future water management policies in a river basin.
-It is designed to be applied to any river basin through appropriate input data preparation. 
+**<p style="text-align: center;">
+StateMod Model version 15
+</p>**
 
-**This documentation is a work in progress, with the initial online version including references to the existing PDF format
-and examples to illustrate use of online documentation features.**
+**<p style="text-align: center;">
+Last updated December, 2019
+</p>**
 
-This documentation page includes the following sections:
+# Disclaimer #
 
-* [How to Use this Documentation](#how-to-use-this-documentation) - guidance and list of main documentation sections
-* [Colorado's Decision Support Systems (CDSS)](#colorados-decision-support-systems-cdss) - the system under which the software is maintained
-* [License](#license) - license for software and this documentation
-* [Source Repository on GitHub](#source-repository-on-github) - location of StateMod repository in GitHub
+This program is furnished by The State of Colorado (State) and is accepted and used by the recipient upon the expressed understanding that the State makes no 
+warranties, express or implied, concerning the accuracy, completeness, reliability, usability, or suitability for any particular purpose of the information 
+and data contained in this program or furnished in connection therewith, and the State shall be under no liability whatsoever to any person by reason of any 
+use made thereof.
 
-------------
+The program herein belongs to the State of Colorado. Therefore, the recipient further agrees not to assert any proprietary rights therein or to further 
+represent this program to anyone as other than a State program.
 
-## How to Use this Documentation ##
+# License #
 
-This documentation is the user documentation for the StateMod software.
-Major sections of the documentation currently consist of the legacy Word/PDF documentation. 
-The legacy PDF documents are referenced from web pages for each section of the user documentation,
-using the original chapter numbers.
-Some shorter sections have been converted to online form.
-The legacy documentation may be fully converted to online navigable form at some point.
+This StateMod documentation is licensed using the
+[Creative Commons Attribution International 4.0 (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).
 
-Use the navigation menu on the left to select pages and the navigation menu on the right
-to select sections within a page.
-The navigation menus may be collapsed if viewing in a narrow window or mobile device.
+The StateMod software is licensed using the GPL 3 license (see the [StateMod software repository](https://github.com/OpenCDSS/cdss-app-statemod-fortran)).
 
-* See the [Full legacy documentation as PDF](legacy/StateMod Version 15 Documentation.pdf) (note that the links work
-but ***Back*** may return to this page).
+# Source Repository on GitHub #
 
-## Colorado's Decision Support Systems (CDSS) ##
-
-Colorado's Decision Support Systems (CDSS, [cdss.state.co.us](http://cdss.state.co.us))
-has been developed to answer important questions about Colorado's water resources.
-CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](http://cwcb.state.co.us)
-and [Colorado Division of Water Resources (DWR)](http://water.state.co.us).
-
-![CDSS Website](index-images/CDSS-website.png)
-
-One component of CDSS is the StateMod water allocation model, which estimates water allocation given water supply and demand and
-physical and legal (water right) constraints on water decisions.
-StateMod results are linked to the StateCU consumptive use model and in some basins the MODFLOW groundwater model.
-
-In late 2016, the CWCB funded the OpenCDSS project to move StateMod and other CDSS software to open source licensing
-and establish open source software projects.
-The [Open Water Foundation](http://openwaterfoundation.org) was contracted to lead the OpenCDSS project.
-
-## License ##
-
-The license for this documentation is the [Creative Commons CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
-
-The license for StateCU software is the GPL v3 license.
-
-## Source Repository on GitHub ##
-
-The source files for this documentation are maintained in the public GitHub repository for StateMod:
+The source files for this documentation are maintained in a GitHub repository:
 [cdss-app-statemod-fortran-doc-user](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user).
 
-## Release Notes ##
-
-Release notes for StateMod and this documentation will be implemented as documentation is updated.
+This user documentation is maintained in a repository that is separate from StateMod code
+in order to facilitate contributions by non-programmers.
