@@ -1,6 +1,6 @@
 # StateMod User Documentation #
 
-<a name="StateMod"></a>
+<a name="StateMod" alt="StateMod interface"></a>
 ![StateMod](images/StateMod.png)
 
 **<p style="text-align: center;">

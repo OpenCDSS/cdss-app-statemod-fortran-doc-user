@@ -116,6 +116,7 @@ This repository is maintained by the OpenCDSS team.
 The following release notes indicate major updates for documentation.
 See also the GitHub issues for details.
 
+* 2023-04-20 - Updated documentation to fix broken links and remediate issues related to accessibility including alt text for images and heading structures.
 * 2020-06-03 - Finished porting legacy .pdf documentation to MKDocs. Uploading to CDSS website.
 * 2019-04-26 - Update to use opencdss.state.co.us.
 * 2019-03-23 - Update to MkDocs 1.04.
