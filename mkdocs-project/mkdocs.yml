@@ -252,9 +252,17 @@ site_description:  'StateMod Documentation'
 site_author:  'Colorado Department of Natural Resources'
 copyright:  'Copyright Colorado Department of Natural Resources'
 # Extra options
-extra:
  #Use extra CSS to customize styles, based on theme
- extra_css: 'css/extra-material-theme.css'
+extra_css:
+  - 'css/extra-material-theme.css'
+# ------------------------------------------------
+# Google Analytics
+# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
+extra:
+  analytics:
+    provider: google
+    property: 'G-PTJLXFDPDL'
+# ------------------------------------------------
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
   - 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML'
